@@ -45,6 +45,7 @@ body {
 .button-search, .button-menu {
     background-color: transparent;
     border: none;
+    cursor: pointer;
     fill: #E8E8E8;
 }
 .button-search:hover, .button-menu:hover {
@@ -220,7 +221,7 @@ margin-bottom: 95px;
     display: flex;
     justify-content: center;
 }
-.offer-catalog-button {
+.offer-catalog-link {
     width: 212px;
     height: 48px;
     background-color: #FFFFFF;
@@ -233,7 +234,7 @@ margin-bottom: 95px;
     justify-content: center;
     align-items: center;
 }
-.offer-catalog-button:hover {
+.offer-catalog-link:hover {
     color: #FFFFFF;
     background-color: #F16D7F;
 }
@@ -342,6 +343,7 @@ margin-top: 39px;
 .form-button {
     width: 100px;
     height: 49px;
+    cursor: pointer;
     background: #F16D7F;
     color: #FFFFFF;
     border-radius: 0px 30px 30px 0px;
@@ -444,22 +446,22 @@ margin-top: 39px;
     align-items: center;
 }
 .filter-list {
-    width: 70px;
-    height: 18px;
+    background-color: transparent;
+    border: none;
+    /* width: 70px;
+    height: 18px; */
     display: flex;
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+    fill: black;
     }
 .filter-svg {
-    width: 23px;
-    height: 18px;
     padding-left: 9px;
-    fill: black;
 }
-.filter-list:hover, .filter-svg:hover {
+.filter-list:hover {
     color: #EF5B70;
     fill: #EF5B70;
 }
@@ -469,26 +471,24 @@ margin-top: 39px;
     display: flex;
     align-items: center;
     margin-left: 304px;
+    gap: 28px;
 }
-
-.strainer-item::after {
-    content:url(../img/sign-svg.svg);
-    margin-left: 10px;
-    margin-right: 10px;
-} 
-
-.strainer-link {
+.strainer-button {
     text-decoration: none;
+    background-color: transparent;
+    border: none;
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
-    line-height: 17px;
-  
+    fill: #6F6E6E;
 }
-
-.strainer-link:hover {
+.sign-svg {
+    margin-left: 10px;
+}
+.strainer-button:hover {
   /* text-decoration: underline; */
     color: #F16D7F;
+    fill: #F16D7F;
 }
 .pagination {
 	display: flex;
@@ -517,7 +517,10 @@ margin-top: 39px;
     color: #C4C4C4;
     border: transparent;
     background-color: transparent;
+    cursor: pointer;
+    fill: black;
 }
-.pagination-link--active {
+.pagination-link:hover {
 	color: #EF5B70;
+    fill: #EF5B70;
 }
