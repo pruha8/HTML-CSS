@@ -1,0 +1,9 @@
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin flex-argument($display, $justify-content) {
+    display: $display;
+    justify-content: $justify-content;
+}
+

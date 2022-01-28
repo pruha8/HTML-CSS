@@ -1,0 +1,44 @@
+.header {
+    background-color: black;
+    color: white;
+}
+.header-wrap {
+    @include flex-between;
+    align-items: center; 
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.header-col-1 {
+    display: flex;
+}
+.logo-link {
+    text-decoration: none;
+    color: transparent;
+    margin-right: 41px;
+}
+.button-search, .button-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    fill: #E8E8E8;
+}
+.button-search:hover, .button-menu:hover {
+    fill: $main-color;
+}
+.header-col-2 {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+} 
+.register-link, .crate-link {
+    text-decoration: none;
+    color: transparent; 
+    fill: #E8E8E8;
+}
+.register-link:hover, .crate-link:hover {
+    fill: $main-color;
+} 
+.register-link {
+    margin-left: 33px;
+    margin-right: 33px;
+}

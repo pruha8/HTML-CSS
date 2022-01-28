@@ -74,7 +74,7 @@ body {
 }
 
 .button-search:hover, .button-menu:hover {
-  fill: #FF6A6A;
+  fill: #F16D7F;
 }
 
 .header-col-2 {
@@ -94,7 +94,7 @@ body {
 }
 
 .register-link:hover, .crate-link:hover {
-  fill: #FF6A6A;
+  fill: #F16D7F;
 }
 
 .register-link {
@@ -121,12 +121,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .promo-title {
@@ -159,11 +159,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .categories-cardbox {
@@ -174,13 +174,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .categories-cardbox-woman {
@@ -249,11 +249,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 48px;
   list-style-type: none;
   gap: 30px;
@@ -263,12 +263,6 @@ body {
   Width: 360px;
   height: 581px;
   background: #F8F8F8;
-}
-
-.video {
-  width: 360px;
-  height: 420px;
-  background-color: black;
 }
 
 .offer-card-title {
@@ -301,6 +295,12 @@ body {
   text-align: start;
 }
 
+.video {
+  width: 360px;
+  height: 420px;
+  background-color: black;
+}
+
 .offer-catalog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,7 +315,7 @@ body {
   height: 48px;
   background-color: #FFFFFF;
   text-decoration: none;
-  border: 1px solid #F16D7F;
+  border: 1px solid #F26376;
   font-size: 16px;
   line-height: 19px;
   color: #F26376;
@@ -333,6 +333,7 @@ body {
 .offer-catalog-link:hover {
   color: #FFFFFF;
   background-color: #F16D7F;
+  border: transparent;
 }
 
 .advantages {
@@ -372,16 +373,16 @@ body {
   background-position-x: center;
 }
 
-.advantages-delivery-title, .advantages-sales-title, .advantages-assurance-title {
-  font-size: 19.96px;
+.advantages-title {
+  font-size: 20px;
   line-height: 24px;
   color: #FBFBFB;
   padding-top: 28px;
 }
 
-.advantages-delivery-text, .advantages-sales-text, .advantages-assurance-text {
+.advantages-text {
   font-weight: 300;
-  font-size: 13.972px;
+  font-size: 14px;
   line-height: 17px;
   color: #FBFBFB;
   padding: 16px 35px 104px;
@@ -460,28 +461,28 @@ body {
   border: none;
 }
 
-.form-fielde::-webkit-input-placeholder {
+.form-field::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 17px;
   color: #222224;
   opacity: 0.67;
 }
 
-.form-fielde:-ms-input-placeholder {
+.form-field:-ms-input-placeholder {
   font-size: 14px;
   line-height: 17px;
   color: #222224;
   opacity: 0.67;
 }
 
-.form-fielde::-ms-input-placeholder {
+.form-field::-ms-input-placeholder {
   font-size: 14px;
   line-height: 17px;
   color: #222224;
   opacity: 0.67;
 }
 
-.form-fielde::placeholder {
+.form-field::placeholder {
   font-size: 14px;
   line-height: 17px;
   color: #222224;
@@ -572,7 +573,7 @@ body {
           align-items: center;
 }
 
-.catalog-title {
+.promo-catalog-title {
   font-size: 24px;
   line-height: 29px;
   color: #F16D7F;
@@ -615,7 +616,6 @@ body {
   color: #F16D7F;
 }
 
-/* offer-catalog */
 .offer-catalog-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -734,5 +734,68 @@ body {
 .pagination-link:hover {
   color: #EF5B70;
   fill: #EF5B70;
+}
+
+.slider {
+  background-color: #F7F7F7;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.slider-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 64px;
+}
+
+.slider-btn {
+  width: 47px;
+  height: 47px;
+  background-color: rgba(42, 42, 42, 0.15);
+  border: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: black;
+}
+
+.slider-btn:hover {
+  fill: #F16D7F;
+}
+
+.description-wrap {
+  background-color: #FFFFFF;
+  border: 1px solid #eaeaea;
+  margin-top: -64px;
+}
+
+.hr-color-top {
+  width: 63px;
+  height: 3px;
+  border: none;
+  background-color: #EF5B70;
+  color: #EF5B70;
+}
+
+.hr-color-bottom {
+  width: 642px;
+  height: 1px;
+  border: none;
+  background-color: #EAEAEA;
+  color: #EAEAEA;
 }
 /*# sourceMappingURL=style.css.map */
