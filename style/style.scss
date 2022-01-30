@@ -93,8 +93,7 @@ body {
     border-bottom: 1px solid rgba(234, 234, 234, 1);
     &-wrap {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
+        @include flex-between;
         align-items: center;
     
         padding-bottom: $shift;
@@ -104,8 +103,7 @@ body {
         height: 47px;
         background-color: rgba(42, 42, 42, 0.15);
         border: transparent;
-        display: flex;
-        justify-content: center;
+        @include flex-argument(flex, center);
         align-items: center;
         fill: black;
         &:hover {
@@ -118,10 +116,52 @@ body {
 
 // описание товара
 
-.description-wrap {
-	background-color:  #FFFFFF;
-    border: 1px solid rgba(234, 234, 234, 1);
-	margin-top: -$shift;
+.description {
+    margin-bottom: 128px;
+    &-wrap {
+        background-color:  #FFFFFF;
+        border: 1px solid rgba(234, 234, 234, 1);
+        margin-top: -$shift;
+        padding-bottom: 64px;
+    }
+    &-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &-titel {
+        font-weight: 300;
+        font-size: $font-size - 2;
+        line-height: 17px;
+        color: $main-color;
+        padding-top: 64px;
+        padding-bottom: 12px;
+        &-product {
+            font-weight: 300;
+            font-size: $font-size + 2;
+            line-height: 22px;
+            color: #4D4D4D;
+            padding-top: 12px;
+            padding-bottom: 48px;
+        }
+    }
+    &-text {
+        width: 555px;
+        height: 51px;
+        font-weight: 300;
+        font-size: $font-size - 2;
+        line-height: 17px;
+        color: #5E5E5E;
+    }
+    &-price {
+        font-weight: 300;
+        font-size: $font-size + 8;
+        line-height: 29px;
+        color: #EF5B70;
+        padding-top: 32px;
+        padding-bottom: 64px;
+    }
 }
 
 .hr-color-top {
@@ -138,4 +178,59 @@ body {
     border: none;
     background-color: #EAEAEA;
     color: #EAEAEA;
+}
+
+.description-strainer {
+    margin-top: 64px;
+    &-list {
+        list-style-type: none;
+        @include flex-argument(flex, center);
+        align-items: center;
+        gap: 23px;
+    }
+    &-button {
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+        font-size: $font-size - 2;
+        line-height: 17px;
+        color: #6F6E6E;
+        fill: #6F6E6E;
+        padding-top: 48px;
+        padding-bottom: 64px;
+        &:hover {
+            color: $main-color;
+            fill: $main-color;
+            
+        }
+    }
+}
+
+.description-sign-svg {
+    margin-left: 9px;
+}
+
+.description-cart {
+    @include flex-argument(flex, center);
+    align-items: center;
+    text-align: center;
+    &-link {
+        background-color: #FFFFFF;
+        text-decoration: none;
+        border: 1px solid #F26376;
+        font-size: $font-size;
+        line-height: 19px;
+        color: #F26376;
+        padding: 15px 57px 9px 24px;
+        @include flex-argument(flex, left);
+        align-items: center;
+        fill: #EF5B70;
+        gap: 23px;
+        &:hover {
+            color: #FFFFFF;
+            background-color: $main-color;
+            border: transparent;
+            fill: #FFFFFF;
+        }
+    } 
 }
