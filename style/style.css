@@ -71,6 +71,8 @@ body {
   border: none;
   cursor: pointer;
   fill: #E8E8E8;
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
 }
 
 .button-search:hover, .button-menu:hover {
@@ -91,6 +93,8 @@ body {
   text-decoration: none;
   color: transparent;
   fill: #E8E8E8;
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
 }
 
 .register-link:hover, .crate-link:hover {
@@ -263,6 +267,8 @@ body {
   Width: 360px;
   height: 581px;
   background: #F8F8F8;
+  position: relative;
+  overflow: hidden;
 }
 
 .offer-card-title {
@@ -293,6 +299,60 @@ body {
   line-height: 19px;
   color: #F16D7F;
   text-align: start;
+}
+
+.offer-overlay {
+  position: absolute;
+  width: 100%;
+  height: 420px;
+  background-color: rgba(58, 56, 56, 0.86);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.offer-btn-cart {
+  padding: 11px 16px 9px 13px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  fill: white;
+  -webkit-transition: background-color 0.3s, color 0.3s, fill 0.3s;
+  transition: background-color 0.3s, color 0.3s, fill 0.3s;
+}
+
+.offer-btn-cart svg {
+  vertical-align: middle;
+  margin-right: 11px;
+}
+
+.offer-btn-cart:hover {
+  background-color: #FFFFFF;
+  color: #F16D7F;
+  fill: #F16D7F;
+}
+
+.offer-card:hover .offer-overlay {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .video {
@@ -328,6 +388,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .offer-catalog-link:hover {
@@ -394,6 +456,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
+}
+
+.feedback-layer {
+  height: 448px;
+  background-color: rgba(244, 244, 244, 0.7);
 }
 
 .feedback-wrap {
@@ -502,6 +569,12 @@ body {
   border-radius: 0px 30px 30px 0px;
   padding: 7px 7px 6px 8px;
   border: none;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.form-button:hover {
+  background: #E05C6E;
 }
 
 .footer {
@@ -553,11 +626,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .social-link:hover {
   background: #F16D7F;
   color: #FFFFFF;
+  -webkit-transform: rotate(360deg) scale(1.2);
+          transform: rotate(360deg) scale(1.2);
 }
 
 /* каталог promo */
@@ -607,6 +688,8 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #636363;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .breadcrumbs-link-current {
@@ -644,6 +727,7 @@ body {
 .filter-list {
   background-color: transparent;
   border: none;
+  cursor: pointer;
   /* width: 70px;
     height: 18px; */
   display: -webkit-box;
@@ -655,6 +739,8 @@ body {
   line-height: 17px;
   color: #000000;
   fill: black;
+  -webkit-transition: background-color 0.3s, color 0.3s, fill 0.3s;
+  transition: background-color 0.3s, color 0.3s, fill 0.3s;
 }
 
 .filter-svg {
@@ -684,8 +770,11 @@ body {
   border: none;
   font-size: 14px;
   line-height: 17px;
+  cursor: pointer;
   color: #6F6E6E;
   fill: #6F6E6E;
+  -webkit-transition: background-color 0.3s, color 0.3s, fill 0.3s;
+  transition: background-color 0.3s, color 0.3s, fill 0.3s;
 }
 
 .sign-svg {
@@ -733,6 +822,8 @@ body {
   background-color: transparent;
   cursor: pointer;
   fill: black;
+  -webkit-transition: background-color 0.3s, color 0.3s, fill 0.3s;
+  transition: background-color 0.3s, color 0.3s, fill 0.3s;
 }
 
 .pagination-link:hover {
@@ -775,10 +866,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
   fill: black;
+  -webkit-transition: fill 0,3s;
+  transition: fill 0,3s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .slider-btn:hover {
   fill: #F16D7F;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .description {
@@ -886,6 +985,9 @@ body {
   fill: #6F6E6E;
   padding-top: 48px;
   padding-bottom: 64px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s, color 0.3s, fill 0.3s;
+  transition: background-color 0.3s, color 0.3s, fill 0.3s;
 }
 
 .description-strainer-button:hover {
@@ -929,12 +1031,14 @@ body {
           align-items: center;
   fill: #EF5B70;
   gap: 23px;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .description-cart-link:hover {
   color: #FFFFFF;
   background-color: #F16D7F;
-  border: transparent;
   fill: #FFFFFF;
+  border: 1px solid #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */

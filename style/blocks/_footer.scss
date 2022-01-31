@@ -28,8 +28,11 @@
     color: #000000;
     @include flex-argument(flex, center);
     align-items: center;
+    @include transition-button;
+    transition: transform 1s;
 }
 .social-link:hover {
     background: $main-color;
     color: #FFFFFF;
+    transform: rotate(360deg) scale(1.2);
 }
