@@ -38,6 +38,7 @@ body {
 .header {
   background-color: black;
   color: white;
+  position: relative;
 }
 
 .header-wrap {
@@ -104,6 +105,75 @@ body {
 .register-link {
   margin-left: 33px;
   margin-right: 33px;
+}
+
+.main-nav {
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 78px;
+  right: 0px;
+  height: 764px;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width: 232px;
+  padding: 37px 34px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-nav--close {
+  display: block;
+}
+
+.main-nav-box {
+  position: relative;
+}
+
+.main-nav-close {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  border: none;
+  background-color: transparent;
+}
+
+.main-nav-titel {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding-bottom: 24px;
+}
+
+.main-nav-list {
+  list-style-type: none;
+}
+
+.submenu-list {
+  padding-left: 22px;
+  padding-bottom: 20px;
+}
+
+.main-nav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+}
+
+.submenu-list {
+  list-style-type: none;
+}
+
+.submenu-item {
+  padding-top: 11px;
+}
+
+.submenu-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
 }
 
 .main {
