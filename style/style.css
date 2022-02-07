@@ -1128,11 +1128,6 @@ body {
 }
 
 .description-strainer {
-  margin-top: 64px;
-}
-
-.description-strainer-list {
-  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1142,31 +1137,62 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 23px;
+  margin-top: 64px;
 }
 
-.description-strainer-button {
-  text-decoration: none;
-  background-color: transparent;
-  border: none;
+.description-strainer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 28px;
+}
+
+::-webkit-details-marker {
+  display: none;
+}
+
+.description-strainer-list {
+  display: block;
   font-size: 14px;
   line-height: 17px;
+  cursor: pointer;
   color: #6F6E6E;
   fill: #6F6E6E;
-  padding-top: 48px;
-  padding-bottom: 64px;
-  cursor: pointer;
-  -webkit-transition: background-color 0.3s, color 0.3s, fill 0.3s;
-  transition: background-color 0.3s, color 0.3s, fill 0.3s;
-}
-
-.description-strainer-button:hover {
-  color: #F16D7F;
-  fill: #F16D7F;
 }
 
 .description-sign-svg {
-  margin-left: 9px;
+  margin-left: 10px;
+}
+
+.description-strainer-item[open] .description-strainer-list {
+  color: #EF5B70;
+  fill: #EF5B70;
+  z-index: 10001;
+  position: relative;
+  background: #FFFFFF;
+}
+
+.description-strainer-button {
+  position: absolute;
+  z-index: 10000;
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 7px 30px 6px 9px;
+}
+
+.description-strainer-button-box {
+  text-align: left;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+  padding-bottom: 6px;
+}
+
+.description-btn-checkbox {
+  width: 12px;
+  height: 12px;
+  margin-right: 11px;
 }
 
 .description-cart {
@@ -1180,6 +1206,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  margin-top: 48px;
 }
 
 .description-cart-link {

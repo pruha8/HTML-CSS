@@ -255,42 +255,69 @@ body {
 }
 
 .description-strainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 64px;
-    &-list {
-        list-style-type: none;
-        @include flex-argument(flex, center);
-        align-items: center;
-        gap: 23px;
-    }
-    &-button {
-        text-decoration: none;
-        background-color: transparent;
-        border: none;
-        font-size: $font-size - 2;
-        line-height: 17px;
-        color: #6F6E6E;
-        fill: #6F6E6E;
-        padding-top: 48px;
-        padding-bottom: 64px;
-        cursor: pointer;
-        @include transition-button-fill;
-       
-        &:hover {
-            color: $main-color;
-            fill: $main-color;
-         
-        }
-    }
 }
-
+.description-strainer-box {
+    display: flex;
+    padding-right: 28px;
+ }
+    
+::-webkit-details-marker {display: none;}
+.description-strainer-list {
+    display: block;
+    font-size: $font-size - 2;
+    line-height: 17px;
+    cursor: pointer;
+    color: #6F6E6E;
+    fill: #6F6E6E;
+    }
 .description-sign-svg {
-    margin-left: 9px;
+    margin-left: 10px;
 }
+    
+    
+.description-strainer-item[open] .description-strainer-list {
+    color: #EF5B70;
+    fill: #EF5B70;
+    z-index: 10001;
+    position: relative;
+    background: #FFFFFF;
+}
+    
+    
+.description-strainer-button {
+    position: absolute;
+    z-index: 10000;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 7px 30px 6px 9px;
+    
+}
+.description-strainer-button-box {
+    text-align: left;
+    font-size: $font-size - 2;
+    line-height: 16px;
+    color: #6F6E6E;
+    padding-bottom: 6px;
+    
+}
+    
+.description-btn-checkbox {
+    width: 12px;
+    height: 12px;
+    margin-right: 11px; 
+}
+    
+    
 
 .description-cart {
     @include flex-argument(flex, center);
     align-items: center;
     text-align: center;
+    margin-top: 48px;
     &-link {
         background-color: #FFFFFF;
         text-decoration: none;
@@ -314,6 +341,3 @@ body {
         }
     } 
 }
-
-
-
