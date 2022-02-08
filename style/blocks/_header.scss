@@ -45,3 +45,8 @@
     margin-left: 33px;
     margin-right: 33px;
 }
+@media (max-width: $mobile-breakpoint){
+    .register-link, .crate-link {
+        display: none;
+    }
+}

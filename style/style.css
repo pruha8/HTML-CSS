@@ -35,6 +35,18 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 1180px) {
+  .wrap {
+    width: 736px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    width: 359px;
+  }
+}
+
 .header {
   background-color: black;
   color: white;
@@ -107,6 +119,12 @@ body {
   margin-right: 33px;
 }
 
+@media (max-width: 768px) {
+  .register-link, .crate-link {
+    display: none;
+  }
+}
+
 .main-nav {
   background-color: #FFFFFF;
   position: absolute;
@@ -121,8 +139,8 @@ body {
           box-sizing: border-box;
 }
 
-.main-nav--close {
-  display: block;
+.main-nav_close {
+  display: none;
 }
 
 .main-nav-box {
@@ -203,6 +221,38 @@ body {
           align-items: center;
 }
 
+@media (max-width: 1180px) {
+  .promo-wrap {
+    height: 363px;
+    background-image: url(../img/promo-picture-tablet.png);
+    background-repeat: no-repeat;
+    background-position-x: -30px;
+    background-position-y: bottom;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-wrap {
+    height: 363px;
+    background-image: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .promo-title {
   font-weight: 900;
   font-size: 48px;
@@ -222,6 +272,47 @@ body {
 
 .promo-title-pink {
   color: #F16D7F;
+}
+
+@media (max-width: 1180px) {
+  .promo-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 29px;
+    color: #222222;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin-right: 0px;
+  }
+  .promo-title-small {
+    line-height: 29px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #222222;
+  }
+  .promo-title-pink {
+    color: #F16D7F;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-title {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 24px;
+    color: #222222;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+  }
+  .promo-title-small {
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #222222;
+  }
+  .promo-title-pink {
+    color: #F16D7F;
+  }
 }
 
 .categories {
