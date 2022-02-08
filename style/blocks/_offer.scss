@@ -4,7 +4,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        display: block;
+        // display: block;
     }
     &-title {
         font-size: $font-size * 2 - 2;
@@ -104,6 +104,30 @@
     height: 420px;
     background-color: black;
 
+}
+
+@media (max-width: $tablet-breakpoint) {
+    .offer {
+        margin-bottom: 54px;
+        &-text {
+            padding-bottom: 73px;
+        }
+        &-cardbox {
+            gap: 16px;
+        }
+    }
+ }
+
+@media (max-width: $mobile-breakpoint){
+    .offer {
+        margin-bottom: 96px;
+        &-text {
+            padding-bottom: 64px;
+        }
+        &-cardbox {
+            gap: 16px;
+        }
+    }
 }
 
 

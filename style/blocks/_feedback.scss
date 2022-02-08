@@ -48,7 +48,7 @@
 
 .form {
     @include flex-argument(flex, center);
-    margin-top: 39px;
+    margin-top: 32px;
     &-field {
         width: 256px;
         height: 49px;
@@ -83,3 +83,55 @@
         background:#E05C6E;
     }
 }
+
+
+@media (max-width: $tablet-breakpoint) {
+    .feedback-tablet {
+        // height: 693px;
+        background-image: url(../img/img-feedback-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    }
+    .feedback {
+        background-image: none;
+    }
+    .feedback-layer {
+        height: 560px; 
+    }
+    .feedback-wrap {
+        display: block;
+    }
+    .feedback-reviews {
+        width: 360px;
+        height: 225px;
+        text-align: center;
+        margin-top: 74px;
+        padding-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .feedback-subscribe {
+        margin-left: auto;
+        margin-right: auto;
+        width: 557px;
+        margin-top: 48px;
+        // margin-bottom: 219px;
+        // padding-bottom: 140px;
+        text-align: center;
+        &-title {
+            padding-top: 0px;
+        }
+    }
+    .form {
+        margin-top: 27px;
+        // padding-bottom: 140px;
+        // margin-bottom: 219px;
+    }
+}
+// @media (max-width: $mobile-breakpoint){
+//     .wrap {
+//         width: 359px;
+//     }
+// }
+?????????????
