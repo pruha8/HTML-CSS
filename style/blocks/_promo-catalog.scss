@@ -40,3 +40,19 @@
   /* text-decoration: underline; */
     color: $main-color;
 }
+
+@media (max-width: $mobile-breakpoint){
+    .promo-catalog-wrap {
+        display: block;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 46px;
+    }
+    .promo-catalog-title {
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+    .breadcrumbs-list {
+        justify-content: center;
+    }
+}

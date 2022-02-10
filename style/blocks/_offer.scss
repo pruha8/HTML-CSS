@@ -1,30 +1,28 @@
-.offer {
-    margin-bottom: 95px;
-    &-wrap {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        // display: block;
+
+.offer-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
     }
-    &-title {
+    .offer-title {
         font-size: $font-size * 2 - 2;
         line-height: 36px;
         color: #222222;
     }
-    &-text {
+    .offer-text {
         font-size: $font-size - 2;
         line-height: 17px;
         color: #9F9F9F;
         padding-bottom: 48px;
     }
-    &-cardbox {
+    .offer-cardbox {
         @include flex-between;
         flex-wrap: wrap;
-        margin-bottom: 48px;
         list-style-type: none;
         gap: 30px;
     }
-    &-card {
+    .offer-card {
         Width: 360px;
         height: 581px;
         background: #F8F8F8;
@@ -58,7 +56,7 @@
             text-align: start;
         }
     }
-    &-overlay {
+    .offer-overlay {
         position: absolute;
         width: 100%;
         height: 420px;
@@ -71,7 +69,7 @@
         transition: opacity 0.5s, transform 0.5s;
 
     }
-    &-btn-cart {
+    .offer-btn-cart {
         padding: 11px 16px 9px 13px;
         color: #FFFFFF;
         font-size: $font-size - 2;
@@ -91,7 +89,6 @@
         }
     }
 
-}
 .offer-card:hover .offer-overlay {
     opacity: 1;
     transform: scale(1);
@@ -106,33 +103,13 @@
 
 }
 
-@media (max-width: $tablet-breakpoint) {
-    .offer {
-        margin-bottom: 54px;
-        &-text {
-            padding-bottom: 73px;
-        }
-        &-cardbox {
-            gap: 16px;
-        }
-    }
- }
 
-@media (max-width: $mobile-breakpoint){
-    .offer {
-        margin-bottom: 96px;
-        &-text {
-            padding-bottom: 64px;
-        }
-        &-cardbox {
-            gap: 16px;
-        }
-    }
-}
 
 
 .offer-catalog {
     @include flex-argument(flex, center);
+    margin-bottom: 95px;
+    margin-top: 48px;
     &-link {
         width: 212px;
         height: 48px;
@@ -151,4 +128,30 @@
             border: transparent;
         }
     } 
+}
+@media (max-width: $tablet-breakpoint) {
+    .offer-text {
+            padding-bottom: 73px;
+}
+    .offer-cardbox {
+            gap: 16px;
+    }
+    .offer-catalog {
+        margin-top: 32px;
+        margin-bottom: 54px;
+    }
+}
+ 
+
+@media (max-width: $mobile-breakpoint){
+    .offer-text {
+            padding-bottom: 64px;
+    }
+    .offer-cardbox {
+            gap: 16px;
+    }
+    .offer-catalog {
+        margin-top: 40px;
+        margin-bottom: 96px;
+    }
 }

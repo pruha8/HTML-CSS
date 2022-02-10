@@ -119,7 +119,22 @@ body {
   margin-right: 33px;
 }
 
+@media (max-width: 1180px) {
+  .header-col-1 {
+    padding-left: 15px;
+  }
+  .header-col-2 {
+    padding-right: 25px;
+  }
+}
+
 @media (max-width: 768px) {
+  .header-col-1 {
+    padding-left: 8px;
+  }
+  .header-col-2 {
+    padding-right: 8px;
+  }
   .register-link, .crate-link {
     display: none;
   }
@@ -466,10 +481,6 @@ body {
   }
 }
 
-.offer {
-  margin-bottom: 95px;
-}
-
 .offer-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,7 +514,6 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 48px;
   list-style-type: none;
   gap: 30px;
 }
@@ -606,30 +616,6 @@ body {
   background-color: black;
 }
 
-@media (max-width: 1180px) {
-  .offer {
-    margin-bottom: 54px;
-  }
-  .offer-text {
-    padding-bottom: 73px;
-  }
-  .offer-cardbox {
-    gap: 16px;
-  }
-}
-
-@media (max-width: 768px) {
-  .offer {
-    margin-bottom: 96px;
-  }
-  .offer-text {
-    padding-bottom: 64px;
-  }
-  .offer-cardbox {
-    gap: 16px;
-  }
-}
-
 .offer-catalog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -637,6 +623,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 95px;
+  margin-top: 48px;
 }
 
 .offer-catalog-link {
@@ -665,6 +653,32 @@ body {
   color: #FFFFFF;
   background-color: #F16D7F;
   border: transparent;
+}
+
+@media (max-width: 1180px) {
+  .offer-text {
+    padding-bottom: 73px;
+  }
+  .offer-cardbox {
+    gap: 16px;
+  }
+  .offer-catalog {
+    margin-top: 32px;
+    margin-bottom: 54px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-text {
+    padding-bottom: 64px;
+  }
+  .offer-cardbox {
+    gap: 16px;
+  }
+  .offer-catalog {
+    margin-top: 40px;
+    margin-bottom: 96px;
+  }
 }
 
 .advantages {
@@ -1140,6 +1154,26 @@ body {
   color: #F16D7F;
 }
 
+@media (max-width: 768px) {
+  .promo-catalog-wrap {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-bottom: 46px;
+  }
+  .promo-catalog-title {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+  .breadcrumbs-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .offer-catalog-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1332,6 +1366,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: -25px;
+  margin-top: 48px;
+  margin-bottom: 96px;
 }
 
 .pagination-list {
@@ -1366,6 +1402,75 @@ body {
 .pagination-link:hover {
   color: #EF5B70;
   fill: #EF5B70;
+}
+
+@media (max-width: 1180px) {
+  .offer-catalog-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+  .filter-list {
+    padding-left: 0px;
+  }
+  .strainer {
+    margin-left: 0px;
+  }
+  .strainer-box {
+    padding-left: 28px;
+    padding-right: 0px;
+  }
+  .offer-card-catalog-tablet {
+    display: none;
+  }
+  .pagination {
+    margin-top: 40px;
+    margin-bottom: 72px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-catalog-top {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+  .offer-catalog-filter {
+    width: 38px;
+  }
+  .filter-list {
+    height: 25px;
+    background-image: url(../img/filter-svg-mobile.svg);
+    background-repeat: no-repeat;
+    font-size: 0;
+    padding: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .filter-svg {
+    display: none;
+  }
+  .strainer {
+    padding-top: 0px;
+    padding-bottom: 11px;
+  }
+  .strainer-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 24px;
+  }
+  .pagination {
+    margin-top: 40px;
+    margin-bottom: 64px;
+    margin-left: 0px;
+  }
 }
 
 .slider {

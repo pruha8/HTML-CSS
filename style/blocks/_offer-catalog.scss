@@ -4,9 +4,6 @@
     margin-bottom: 64px;
 }
 
-
-
-
 .offer-catalog-filter {
     width: 360px;
     @include flex-between;
@@ -30,6 +27,7 @@
 .filter-svg {
     padding-left: 9px;
 }
+
 .offer-catalog-filter[open] {
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
@@ -158,26 +156,11 @@ padding-bottom: 6px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .pagination {
 	@include flex-argument(flex, center);
     margin-left: -25px;
+    margin-top: 48px;
+    margin-bottom: 96px;
     &-list {
         list-style: none;
         display: flex;
@@ -204,5 +187,66 @@ padding-bottom: 6px;
             color: #EF5B70;
             fill: #EF5B70;
         }
+    }
+}
+
+@media (max-width: $tablet-breakpoint) {
+    .offer-catalog-top {
+        @include flex-between;
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+    .filter-list {
+        padding-left: 0px;
+    }
+    .strainer {
+        margin-left: 0px;
+    }
+    .strainer-box {
+        padding-left: 28px;
+        padding-right: 0px;
+    }
+    .offer-card-catalog-tablet {
+        display: none;
+    }
+    .pagination {
+        margin-top: 40px;
+        margin-bottom: 72px;
+        margin-left: 15px;
+    }
+}
+
+
+ @media (max-width: $mobile-breakpoint){
+    .offer-catalog-top {
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+    .offer-catalog-filter {
+        width: 38px;
+    }
+    .filter-list {
+        height: 25px;  
+        background-image: url(../img/filter-svg-mobile.svg);
+        background-repeat: no-repeat;
+        font-size: 0;
+        padding: 0px;
+        align-items: center;
+    }
+    .filter-svg {
+        display: none;
+    }
+    .strainer {
+        padding-top: 0px;
+        padding-bottom: 11px;
+    }
+    .strainer-box {
+        display: flex;
+        padding-left: 24px;
+    }
+    .pagination {
+        margin-top: 40px;
+        margin-bottom: 64px;
+        margin-left: 0px;
     }
 }
