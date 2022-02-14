@@ -43,7 +43,7 @@ body {
 
 @media (max-width: 768px) {
   .wrap {
-    width: 359px;
+    width: 374px;
   }
 }
 
@@ -1481,6 +1481,9 @@ body {
 
 .slider-wrap {
   width: 100%;
+}
+
+.slider-mobile-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1520,6 +1523,34 @@ body {
   fill: #F16D7F;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+@media (max-width: 1180px) {
+  .slider-mobile-box {
+    height: 624px;
+    padding-bottom: 0px;
+  }
+  .slider-img {
+    width: 466px;
+    height: 565px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-wrap {
+    width: 374px;
+  }
+  .slider-mobile-box {
+    width: 374px;
+    height: 454px;
+    padding-bottom: 0px;
+    background-image: url(../img/slider-mobile-img.png);
+    margin-top: 85px;
+    margin-bottom: 85px;
+  }
+  .slider-img {
+    display: none;
+  }
 }
 
 .description {
@@ -1706,5 +1737,81 @@ body {
   background-color: #F16D7F;
   fill: #FFFFFF;
   border: 1px solid #F16D7F;
+}
+
+@media (max-width: 1180px) {
+  .description-wrap {
+    height: 600px;
+    margin-top: 0px;
+    width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .description {
+    margin-bottom: 64px;
+  }
+  .description-titel-product {
+    padding-bottom: 31px;
+  }
+  .description-text {
+    width: 326px;
+    height: 105px;
+    line-height: 143.1%;
+  }
+  .description-price {
+    padding-bottom: 31px;
+  }
+  .hr-color-bottom {
+    width: 175px;
+  }
+  .description-strainer {
+    margin-top: 49px;
+  }
+  .description-strainer-list {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .description-cart {
+    margin-top: 64px;
+  }
+  .description-strainer-box {
+    padding-right: 0px;
+  }
+  .description-strainer-list-padding {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.offer-wrap-product {
+  margin-bottom: 129px;
+}
+
+@media (max-width: 1180px) {
+  .offer-cardbox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .offer-card-tablet-product {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-wrap-product {
+    margin-bottom: 64px;
+  }
+  .offer-cardbox-gap {
+    gap: 0px;
+  }
+  .offer-card-tablet-product {
+    display: block;
+  }
+  .offer-card-mobile-product {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

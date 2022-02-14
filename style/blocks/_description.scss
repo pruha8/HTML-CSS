@@ -146,3 +146,48 @@
         }
     } 
 }
+
+@media (max-width: $tablet-breakpoint) {
+    .description-wrap {
+        height: 600px;
+        margin-top: 0px;
+        width: 768px;
+        
+        }
+    }
+@media (max-width: $mobile-breakpoint) {
+    .description {
+        margin-bottom: 64px;
+    }
+    .description-titel-product {
+        padding-bottom: 31px;
+    }
+    .description-text {
+        width: 326px;
+        height: 105px;
+        line-height: 143.1%;
+    }
+    .description-price {
+    padding-bottom: 31px;
+    }
+    .hr-color-bottom {
+        width: 175px;
+    }
+    .description-strainer {
+        margin-top: 49px;
+    }
+    .description-strainer-list {
+        font-size: $font-size - 6;
+    line-height: 12px;
+    }
+    .description-cart {
+        margin-top: 64px;
+    }
+    .description-strainer-box {
+        padding-right: 0px;
+    }
+    .description-strainer-list-padding {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
