@@ -1,0 +1,30 @@
+.promo {
+    background-color: #F1E4E6;
+}
+.promo-wrap{
+    height: 764px;
+    background-image: url(../img/promo-picture.png);
+    background-repeat: no-repeat;
+    background-position-x: -225px;
+    background-position-y: bottom;
+    @include flex-argument(flex, flex-end);
+    align-items: center;
+}
+.promo-title {
+    font-weight: 900;
+    font-size: $font-size * 3;
+    line-height: 36px;
+    color: #222222;
+    border-left: 12px solid $main-color;
+    padding-left: 16px;
+    margin-right: 90px;
+    &-small {
+        font-weight: bold;
+        font-size: $font-size * 2;
+        line-height: 38px;
+        color: #222222;
+    }
+    &-pink {
+        color: $main-color;
+    }
+}

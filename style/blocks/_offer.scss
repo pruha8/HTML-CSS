@@ -1,0 +1,130 @@
+.offer {
+    margin-bottom: 95px;
+    &-wrap {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        display: block;
+    }
+    &-title {
+        font-size: $font-size * 2 - 2;
+        line-height: 36px;
+        color: #222222;
+    }
+    &-text {
+        font-size: $font-size - 2;
+        line-height: 17px;
+        color: #9F9F9F;
+        padding-bottom: 48px;
+    }
+    &-cardbox {
+        @include flex-between;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+        list-style-type: none;
+        gap: 30px;
+    }
+    &-card {
+        Width: 360px;
+        height: 581px;
+        background: #F8F8F8;
+        position: relative;
+        overflow: hidden;
+        &-title {
+            padding-top: 25px;
+            padding-left: 18px;
+            font-size: $font-size - 3;
+            line-height: 16px;
+            color: #000000;
+            text-align: start;
+        }
+        &-text {
+            padding-top: 13px;
+            padding-left: 18px;
+            padding-right: 29px;
+            font-weight: 300;
+            font-size: $font-size - 2;
+            line-height: 17px;
+            color: #5D5D5D;
+            text-align: start;
+        }
+        &-textpink {
+            padding-top: 18px;
+            padding-left: 18px;
+            padding-bottom: 20px;
+            font-size: $font-size;
+            line-height: 19px;
+            color: $main-color;
+            text-align: start;
+        }
+    }
+    &-overlay {
+        position: absolute;
+        width: 100%;
+        height: 420px;
+        background-color: rgba(58, 56, 56, 0.86);
+        @include flex-argument(flex, center);
+        align-items: center;
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: left top;
+        transition: opacity 0.5s, transform 0.5s;
+
+    }
+    &-btn-cart {
+        padding: 11px 16px 9px 13px;
+        color: #FFFFFF;
+        font-size: $font-size - 2;
+        line-height: 17px;
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+        fill: white;
+        @include transition-button-fill;
+        & svg {
+            vertical-align: middle;
+            margin-right: 11px;
+        }
+        &:hover {
+            background-color: #FFFFFF;
+            color: $main-color;
+            fill: $main-color;
+        }
+    }
+
+}
+.offer-card:hover .offer-overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+.video {
+    width: 360px;
+    height: 420px;
+    background-color: black;
+
+}
+
+
+.offer-catalog {
+    @include flex-argument(flex, center);
+    &-link {
+        width: 212px;
+        height: 48px;
+        background-color: #FFFFFF;
+        text-decoration: none;
+        border: 1px solid #F26376;
+        font-size: $font-size;
+        line-height: 19px;
+        color: #F26376;
+        @include flex-argument(flex, center);
+        align-items: center;
+        @include transition-button;
+        &:hover {
+            color: #FFFFFF;
+            background-color: $main-color;
+            border: transparent;
+        }
+    } 
+}
